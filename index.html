@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shrek - The Unofficial Fan Website</title>
     <link href="/Shrek/Stylesheets/main.css" rel="stylesheet" type="text/css" />
-    <link href="/Shrek//Stylesheets/home.css" rel="stylesheet" type="text/css" />
+    <link href="/Shrek/Stylesheets/home.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
@@ -16,10 +16,10 @@
             </a>
             <nav>
                 <ul>
-                    <li><a class="current" href="/Home.html">Home</a></li>
-                    <li><a href="/Reviews.html">Reviews</a></li>
-                    <li><a href="/Gallery.html">Gallery</a></li>
-                    <li><a href="/Login.html">Log In</a></li>
+                    <li><a class="current" href="/index.html">Home</a></li>
+                    <li><a href="/Shrek/Reviews.html">Reviews</a></li>
+                    <li><a href="/Shrek/Gallery.html">Gallery</a></li>
+                    <li><a href="/Shrek/Login.html">Log In</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
         <section id="about" class="divider white">
             <div class="wrapper">
                 <div id="shrekcover">
-                    <img src="/Assets/Images/Home/Shrekcover.jpg" alt="Shrek! Cover" />
+                    <img src="/Shrek/Assets/Images/Home/Shrekcover.jpg" alt="Shrek! Cover" />
                     <p class="blue"><b>"Shrek!" Book Cover</b></p>
                 </div>
                 <h1>About</h1>
@@ -51,10 +51,10 @@
                 <p>The Shrek franchise from DreamWorks Animation, include four computer-animated films:</p>
                 <br />
                 <div class="moviestable">
-                    <img src="/Assets/Images/Movies/shrek1.jpg" onclick="toggleModal(1);" alt="Shrek" />
-                    <img src="/Assets/Images/Movies/shrek2.jpg" onclick="toggleModal(2);" alt="Shrek 2" />
-                    <img src="/Assets/Images/Movies/shrek3.jpg" onclick="toggleModal(3);" alt="Shrek The Third" />
-                    <img src="/Assets/Images/Movies/shrek4.jpg" onclick="toggleModal(4);" alt="Shrek Forever After" />
+                    <img src="/Shrek/Assets/Images/Movies/shrek1.jpg" onclick="toggleModal(1);" alt="Shrek" />
+                    <img src="/Shrek/Assets/Images/Movies/shrek2.jpg" onclick="toggleModal(2);" alt="Shrek 2" />
+                    <img src="/Shrek/Assets/Images/Movies/shrek3.jpg" onclick="toggleModal(3);" alt="Shrek The Third" />
+                    <img src="/Shrek/Assets/Images/Movies/shrek4.jpg" onclick="toggleModal(4);" alt="Shrek Forever After" />
                 </div>
             </div>
         </section>
@@ -99,7 +99,7 @@
     <div id="blocker" class="" onclick="closeAllModals();"></div>
 
     <div id="modal1" class="modal">
-        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <img class="close-btn" src="/Shrek/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
         <h2>Shrek</h2>
         <br />
         <p>Once upon a time in a far away swamp there lived an ornery ogre named Shrek whose precious solitude is suddenly shattered by an invasion of annoying fairytale characters. There are blind mice in his food, a big, bad wolf in his bed, three little homeless pigs and more, all banished from their kingdom by the evil Lord Farquaad.</p>
@@ -108,7 +108,7 @@
     </div>
 
     <div id="modal2" class="modal">
-        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <img class="close-btn" src="/Shrek/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
         <h2>Shrek 2</h2>
         <br />
         <p>The natural order of fairy tales is interrupted in the sequel to the Academy Award(r)-winning blockbuster "Shrek." "Shrek 2" sends Shrek, Donkey and Princess Fiona on a whirlwind of new adventures with more fairy-tale favorites to lampoon along the way.</p>
@@ -117,7 +117,7 @@
     </div>
 
     <div id="modal3" class="modal">
-        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <img class="close-btn" src="/Shrek/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
         <h2>Shrek The Third</h2>
         <br />
         <p>Being king isn't for everyone - especially if you're an ornery ogre who smells like the shallow end of a swamp. When Shrek married Fiona, the last thing he wanted was to rule Far Far Away, but when his father-in-law, King Harold, suddenly croaks, Shrek is quickly fitted for the crown.</p>
@@ -126,7 +126,7 @@
     </div>
 
     <div id="modal4" class="modal">
-        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <img class="close-btn" src="/Shrek/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
         <h2>Shrek Forever After</h2>
         <br />
         <p>The movie begins just before Shrek rescues Princess Fiona in Shrek. Desperate to lift their daughter's curse, King Harold and Queen Lillian meet with con artist Rumpelstiltskin, who requests becoming king of Far Far Away in exchange.</p>
@@ -138,7 +138,7 @@
         /* Showcase */
         var showcaseBg = document.getElementById('showcase');
         function nextShowcaseBg() {
-            showcaseBg.style.backgroundImage = "url('/Assets/Images/Showcase/" + Math.floor(Math.random() * 40) + ".jpg')";
+            showcaseBg.style.backgroundImage = "url('/Shrek/Assets/Images/Showcase/" + Math.floor(Math.random() * 40) + ".jpg')";
             setTimeout(function () { nextShowcaseBg(); }, 3000);
         }
         nextShowcaseBg();
