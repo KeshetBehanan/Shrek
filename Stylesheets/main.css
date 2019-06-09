@@ -72,23 +72,23 @@ a:hover {
 }
 
 .divider.brown:before {
-    background-image: url('/Assets/Images/Layout/divider-brown.svg');
+    background-image: url('/Shrek/Assets/Images/Layout/divider-brown.svg');
 }
 
 .divider.white:before {
-    background-image: url('/Assets/Images/Layout/divider-white.svg');
+    background-image: url('/Shrek/Assets/Images/Layout/divider-white.svg');
 }
 
 .divider.blue:before {
-    background-image: url('/Assets/Images/Layout/divider-blue.svg');
+    background-image: url('/Shrek/Assets/Images/Layout/divider-blue.svg');
 }
 
 .divider.green:before {
-    background-image: url('/Assets/Images/Layout/divider-green.svg');
+    background-image: url('/Shrek/Assets/Images/Layout/divider-green.svg');
 }
 
 .divider.black:before {
-    background-image: url('/Assets/Images/Layout/divider-black.svg');
+    background-image: url('/Shrek/Assets/Images/Layout/divider-black.svg');
 }
 
 .divider.flipped:before {
