@@ -1,0 +1,223 @@
+﻿@import url('setup.css');
+
+/* General */
+body {
+    background-color: var(--white);
+    margin: 0;
+}
+
+::selection {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    color: var(--black);
+}
+
+h1 {
+    font-family: Pacifico, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: var(--green);
+}
+
+h2 {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+p, a, span, strong {
+    font-family: Roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: var(--blue);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 300ms ease-in-out;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+.wrapper {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Dividers */
+.divider:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 180px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-170px);
+    z-index: 100;
+}
+
+.divider.brown:before {
+    background-image: url('/Assets/Images/Layout/divider-brown.svg');
+}
+
+.divider.white:before {
+    background-image: url('/Assets/Images/Layout/divider-white.svg');
+}
+
+.divider.blue:before {
+    background-image: url('/Assets/Images/Layout/divider-blue.svg');
+}
+
+.divider.green:before {
+    background-image: url('/Assets/Images/Layout/divider-green.svg');
+}
+
+.divider.black:before {
+    background-image: url('/Assets/Images/Layout/divider-black.svg');
+}
+
+.divider.flipped:before {
+    transform: translateY(-170px) scaleX(-1);
+}
+
+/* Text Colors */
+p.blue {
+    color: var(--blue);
+}
+
+p.green {
+    color: var(--green);
+}
+
+p.brown {
+    color: var(--brown);
+}
+
+content:first-child {
+    margin-top: 100px;
+}
+
+/* Sections */
+section {
+    min-height: 200px;
+}
+
+section.white {
+    background-color: var(--white);
+}
+
+section.blue {
+    background-color: var(--blue);
+}
+
+section.brown {
+    background-color: var(--brown);
+}
+
+section.black {
+    background-color: var(--black);
+}
+
+section.black p, section.black span, section.black strong {
+    color: var(--white);
+}
+
+section.green {
+    background-color: var(--green);
+}
+
+/* Components */
+/* Header */
+header {
+    height: 80px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fbfff988;
+    z-index: 200;
+}
+
+    header .logo {
+        height: 60px;
+        transition: filter 300ms ease-in-out;
+        transform: translateX(-6px);
+    }
+
+    header nav {
+        float: right;
+        margin-top: 12px;
+    }
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    header nav ul li {
+        display: inline;
+    }
+
+        header nav ul li a {
+            border-radius: 20px;
+            font-size: 20px;
+            padding: 8px 14px;
+            margin-left: 6px;
+            background-color: var(--white);
+            border: 4px solid var(--blue);
+            transition: all 300ms ease-in-out;
+            transition-property: border-color, color, background-color, filter, border-radius;
+        }
+
+            header nav ul li a.current {
+                background-color: var(--blue);
+                color: white;
+            }
+
+            header nav ul li a:hover {
+                border-color: var(--green);
+                color: var(--white);
+                background-color: var(--green);
+            }
+
+            header .logo, header nav ul li a {
+                filter: drop-shadow(0 0 0 var(--green));
+            }
+
+                header .logo:hover, header nav ul li a:hover {
+                    border-radius: 10px;
+                    filter: drop-shadow(0 0 4px var(--green));
+                }
+
+header nav::after {
+    float: none;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    padding-bottom: 100px;
+    background: var(--brown);
+}
+
+    footer td {
+        vertical-align: top;
+    }
+
+    footer #credits {
+        padding-right: 40px;
+    }

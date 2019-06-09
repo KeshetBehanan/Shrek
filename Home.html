@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shrek - The Unofficial Fan Website</title>
+    <link href="/Stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="/Stylesheets/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="/Home.html">
+                <img class="logo" src="/Assets/Images/Branding/logo.png" alt="Shrek" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="current" href="/Home.html">Home</a></li>
+                    <li><a href="/Reviews.html">Reviews</a></li>
+                    <li><a href="/Gallery.html">Gallery</a></li>
+                    <li><a href="/Login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <content>
+        <section id="showcase">
+            <div class="wrapper">
+                <h1>Shrek - The Unofficial Fan Website</h1>
+                <h3>▼ Scroll Down ▼</h3>
+            </div>
+        </section>
+
+        <section id="about" class="divider white">
+            <div class="wrapper">
+                <div id="shrekcover">
+                    <img src="/Assets/Images/Home/Shrekcover.jpg" alt="Shrek! Cover" />
+                    <p class="blue"><b>"Shrek!" Book Cover</b></p>
+                </div>
+                <h1>About</h1>
+                <p>Shrek is a CGI-animated franchise by DreamWorks Animation loosely based on a 1990 book about an ogre in a fairy tale land who just wants to live in his swamp undisturbed, but is dragged against his will into fighting for the fate of entire kingdoms.</p><br />
+                <p>The Shrek franchise is a set of movies, spin-offs, TV series, and video games which generally revolve around Shrek, Donkey, Puss in Boots, Fiona, and other characters. The series is characterized by its fantastical mixed fairytale setting, as well as its blend of colorful, kid-friendly designs and slapstick with adult-oriented humor, satire and pop-culture references.</p>
+            </div>
+        </section>
+
+        <section class="divider black flipped">
+            <div class="wrapper">
+                <h1>Movies</h1>
+                <p>The Shrek franchise from DreamWorks Animation, include four computer-animated films:</p>
+                <br />
+                <div class="moviestable">
+                    <img src="/Assets/Images/Movies/shrek1.jpg" onclick="toggleModal(1);" alt="Shrek" />
+                    <img src="/Assets/Images/Movies/shrek2.jpg" onclick="toggleModal(2);" alt="Shrek 2" />
+                    <img src="/Assets/Images/Movies/shrek3.jpg" onclick="toggleModal(3);" alt="Shrek The Third" />
+                    <img src="/Assets/Images/Movies/shrek4.jpg" onclick="toggleModal(4);" alt="Shrek Forever After" />
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="divider white"></section> -->
+    </content>
+
+    <footer class="divider brown flipped">
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>About "Shrek - The Unofficial Fan Website"</h2>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="credits">
+                        <p><b>This website was developed by Tal Israeli for the computer science's work at "Brenner" High School.</b></p>
+                        <br />
+                        <p>&copy; All rights reserved to the original owners of the artwork, content, logos, franchise, etc.</p>
+                        <p>This website is under the <a href="/License.html">MIT License</a>.</p>
+                        <p>Copyright &copy; 2019 Tal Israeli</p>
+                    </td>
+                    <td style="width: 20%; max-width: 200px;">
+                        <h4>Resources</h4>
+                        <br />
+                        <a href="https://www.dreamworksanimation.com/shrek/" target="_blank">
+                            <img src="/Assets/Images/Layout/dreamworks-logo.svg" alt="Dreamworks" height="30px" />
+                        </a>
+                        <br />
+                        <br />
+                        <a href="https://www.imdb.com/" target="_blank">
+                            <img src="/Assets/Images/Layout/imdb-logo.svg" alt="Alternate Text" height="30px" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <div id="blocker" class="" onclick="closeAllModals();"></div>
+
+    <div id="modal1" class="modal">
+        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <h2>Shrek</h2>
+        <br />
+        <p>Once upon a time in a far away swamp there lived an ornery ogre named Shrek whose precious solitude is suddenly shattered by an invasion of annoying fairytale characters. There are blind mice in his food, a big, bad wolf in his bed, three little homeless pigs and more, all banished from their kingdom by the evil Lord Farquaad.</p>
+        <br />
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/HobeWN9DnsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <div id="modal2" class="modal">
+        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <h2>Shrek 2</h2>
+        <br />
+        <p>The natural order of fairy tales is interrupted in the sequel to the Academy Award(r)-winning blockbuster "Shrek." "Shrek 2" sends Shrek, Donkey and Princess Fiona on a whirlwind of new adventures with more fairy-tale favorites to lampoon along the way.</p>
+        <br />
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/iuNghO1XsHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <div id="modal3" class="modal">
+        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <h2>Shrek The Third</h2>
+        <br />
+        <p>Being king isn't for everyone - especially if you're an ornery ogre who smells like the shallow end of a swamp. When Shrek married Fiona, the last thing he wanted was to rule Far Far Away, but when his father-in-law, King Harold, suddenly croaks, Shrek is quickly fitted for the crown.</p>
+        <br />
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/fROtD_aE-yE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <div id="modal4" class="modal">
+        <img class="close-btn" src="/Assets/Images/Layout/close-cross.svg" alt="X" onclick="closeAllModals();" />
+        <h2>Shrek Forever After</h2>
+        <br />
+        <p>The movie begins just before Shrek rescues Princess Fiona in Shrek. Desperate to lift their daughter's curse, King Harold and Queen Lillian meet with con artist Rumpelstiltskin, who requests becoming king of Far Far Away in exchange.</p>
+        <br />
+        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/tJtlzGGZWqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <script>
+        /* Showcase */
+        var showcaseBg = document.getElementById('showcase');
+        function nextShowcaseBg() {
+            showcaseBg.style.backgroundImage = "url('/Assets/Images/Showcase/" + Math.floor(Math.random() * 40) + ".jpg')";
+            setTimeout(function () { nextShowcaseBg(); }, 3000);
+        }
+        nextShowcaseBg();
+
+        /* Modals */
+        var blocker = document.getElementById('blocker');
+        var modal1 = document.getElementById('modal1');
+        var modal2 = document.getElementById('modal2');
+        var modal3 = document.getElementById('modal3');
+        var modal4 = document.getElementById('modal4');
+
+        function toggleModal(n) {
+            if (n > 1 || n < 5) {
+                if (n === 1) modal1.classList.add('open');
+                else if (n === 2) modal2.classList.add('open');
+                else if (n === 3) modal3.classList.add('open');
+                else if (n === 4) modal4.classList.add('open');
+
+                blocker.classList.add('open');
+                document.body.classList.add('open');
+            }
+        }
+
+        function closeAllModals() {
+            modal1.classList.remove('open');
+            modal2.classList.remove('open');
+            modal3.classList.remove('open');
+            modal4.classList.remove('open');
+            blocker.classList.remove('open');
+            document.body.classList.remove('open');
+        }
+    </script>
+</body>
+</html>

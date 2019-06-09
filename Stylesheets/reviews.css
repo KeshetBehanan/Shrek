@@ -1,0 +1,54 @@
+section#reviews {
+    padding-bottom: 175px;
+}
+
+.review {
+    background-color: var(--white);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    transition: all ease-in-out 300ms;
+}
+
+.review .profile {
+    font-family: Quicksand, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.review .profile img {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.review .profile span {
+    color: var(--blue);
+    display: inline-block;
+    transform: translateY(-8px);
+    font-weight: bold;
+}
+
+.review .profile span.date {
+    color: var(--brown);
+    font-size: 0.7rem;
+    margin-left: 2px;
+    font-weight: normal;
+}
+
+.review .favmovie * {
+    color: var(--brown);
+    font-size: 0.9rem;
+}
+
+.review p {
+    color: var(--black) !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Animations */
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px black;
+}

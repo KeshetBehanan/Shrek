@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shrek - Reviews</title>
+    <link href="/Stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="/Stylesheets/form.css" rel="stylesheet" type="text/css" />
+    <link href="/Stylesheets/reviews.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="/Home.html">
+                <img class="logo" src="/Assets/Images/Branding/logo.png" alt="Shrek" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a class="current" href="/Reviews.html">Reviews</a></li>
+                    <li><a href="/Gallery.html">Gallery</a></li>
+                    <li><a href="/Login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <content>
+        <section>
+            <div class="wrapper">
+                <h1>Post a New Review</h1><br />
+                <form action="/" method="post" onsubmit="return validate();">
+                    <label for="favmovie">Select you favorite movie:</label><br />
+                    <select id="favmovie" name="favmovie" required>
+                        <option value="-">-- SELECT --</option>
+                        <option value="1">Shrek</option>
+                        <option value="2">Shrek 2</option>
+                        <option value="3">Shrek The Third</option>
+                        <option value="4">Shrek Forever After</option>
+                    </select>
+                    <p id="favmovieErr" class="error"></p>
+
+                    <br />
+                    <br />
+                    <label for="desc">Write your description:</label><br />
+                    <textarea id="desc" name="desc" cols="64" rows="16" maxlength="512" placeholder="Write what did you like or dislike most about your favorite 'Shrek' movie..." ></textarea><br />
+                    <p id="descErr" class="error"></p>
+                    <br />
+                    <input type="submit" value="Post Review" />
+                </form>
+            </div>
+        </section>
+
+        <section id="reviews" class="divider black">
+            <div class="wrapper">
+                <h1>Most Recent Reviews</h1>
+
+                <div class="review">
+                    <div class="profile">
+                        <img src="/Assets/Images/Reviews/0.jpg" alt="bsmith">
+                        <span>bsmith</span>
+                        <span class="date">31 July 2018</span>
+                    </div>
+                    <div class="favmovie">
+                        <strong>Favorite Movie: </strong>
+                        <span>Shrek</span>
+                    </div>
+                    <p>This movie really confronts the problems with society, such as the opioid crisis, domestic abuse, and donkey mistreatment head-on. It was a great way to talk about these issues with my teenage son.</p>
+                </div>
+
+                <div class="review">
+                    <div class="profile">
+                        <img src="/Assets/Images/Reviews/1.jpg" alt="driverscience">
+                        <span>driverscience</span>
+                        <span class="date">15 June 2007</span>
+                    </div>
+                    <div class="favmovie">
+                        <strong>Favorite Movie: </strong>
+                        <span>Shrek The Third</span>
+                    </div>
+                    <p>Humour is definitely the highest theatric art form, and Shrek is right up there at the top. Let's face it, it takes a lot more intelligence to write a good comedy than a drama or action film. In comedy, creativity and timing is critical. Shrek 3 has both! I own the first two Shrek DVD's and will definitely be adding this one to the collection. In general I do not like animated movies. Shrek is the only exception! As to the neigh-sayers, I would hardly know what to think. I mean, when B-Movies, like Sunshine for example, and horrors get a higher rating than this one, I guess there really is no accounting for taste. So if you like comedy and appreciate creativity and timing, go see Shrek. You will enjoy it. I would like to thank the creators for making this film.</p>
+                </div>
+
+                <div class="review">
+                    <div class="profile">
+                        <img src="/Assets/Images/Reviews/2.jpg" alt="the.fifth.echo">
+                        <span>the.fifth.echo</span>
+                        <span class="date">5 May 2010</span>
+                    </div>
+                    <div class="favmovie">
+                        <strong>Favorite Movie: </strong>
+                        <span>Shrek Forever After</span>
+                    </div>
+                    <p>I saw "Shrek Forever After" on special screenings and I really hoped it would live up to the first 2 films. But at the end of the day, it wasn't as good or magical. I kind of felt disappointed because even though the Third Installment was bad I was hoping they went back and recognize their mistakes. But this movie does have its strong points, it was quite funny and entertaining. There were moments in there that felt like the first two films, and overall it is a very enjoyable ride that even though it doesn't live quite up to the first two films. It is worth your money just to have fun with it.</p>
+                    <p>7.2/10 I'd recommend people to see this film, but don't go in it with HIGH expectations.</p>
+                </div>
+
+                <div class="review">
+                    <div class="profile">
+                        <img src="/Assets/Images/Reviews/3.jpg" alt="llltdesq">
+                        <span>llltdesq</span>
+                        <span class="date">15 September 2003</span>
+                    </div>
+                    <div class="favmovie">
+                        <strong>Favorite Movie: </strong>
+                        <span>Shrek</span>
+                    </div>
+                    <p>This most assuredly is not a perfect film, but it is a marvelous send-up of the fairy-tale genre and the script is great. This has romance, humor, a talking donkey, no car chases and makes fun of The Mouse. What more could you ask for? Movie spoofs and karaoke? It has those too. Most harrowing performance by gingerbread? You betcha! The voicework is spot on and even Eddie Murphy is enjoyable. Great fun is had by all (except Michael Eisner-I'd love to have been a fly on the wall in Eisner's office the morning after this copped the Oscar for Animated Feature). Very entertaining and well worth your time. Most recommended.</p>
+                </div>
+
+                <div class="review">
+                    <div class="profile">
+                        <img src="/Assets/Images/Reviews/4.jpg" alt="nowmann">
+                        <span>nowmann</span>
+                        <span class="date">10 November 2004</span>
+                    </div>
+                    <div class="favmovie">
+                        <strong>Favorite Movie: </strong>
+                        <span>Shrek 2</span>
+                    </div>
+                    <p>The first time I watched this movie was in my living room with my husband, daughter, and mom. We all laughed so hard we had to watch it again to see what we missed (which turned out to be a lot!). Antonio as Puss was genius! As was Jennifer Saunders as the fairy godmother. Kudos to the casting director. Once again Eddie Murphy as the annoying and talkative donkey was perfect and even much more lovable. And Mike Myers as Shrek, what can I say? A perfect grumpy ogre. Cameron Diaz once again lets her personality shine through even in animation. Oh, and Rupert! With that voice being the narcissistic Prince Charming. I could go on and on about the characters in this movie but instead I implore you to watch it for yourself. I loved this movie as did my entire family. The jokes in this movie were absolutely delicious! For those naysayers who hated this movie, I say go buy a sense of humor!</p>
+                </div>
+            </div>
+        </section>
+    </content>
+
+    <footer class="divider brown flipped">
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>About "Shrek - The Unofficial Fan Website"</h2>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="credits">
+                        <p><b>This website was developed by Tal Israeli for the computer science's work at "Brenner" High School.</b></p>
+                        <br />
+                        <p>&copy; All rights reserved to the original owners of the artwork, content, logos, franchise, etc.</p>
+                        <p>This website is under the <a href="/License.html">MIT License</a>.</p>
+                        <p>Copyright &copy; 2019 Tal Israeli</p>
+                    </td>
+                    <td style="width: 20%; max-width: 200px;">
+                        <h4>Resources</h4>
+                        <br />
+                        <a href="https://www.dreamworksanimation.com/shrek/" target="_blank">
+                            <img src="/Assets/Images/Layout/dreamworks-logo.svg" alt="Dreamworks" height="30px" />
+                        </a>
+                        <br />
+                        <br />
+                        <a href="https://www.imdb.com/" target="_blank">
+                            <img src="/Assets/Images/Layout/imdb-logo.svg" alt="Alternate Text" height="30px" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script>
+        var favmovie = document.getElementById('favmovie');
+        var favmovieErr = document.getElementById('favmovieErr');
+        var desc = document.getElementById('desc');
+        var descErr = document.getElementById('descErr');
+
+        function validate() {
+            favmovieErr.innerText = "";
+            descErr.innerText = ""
+            var valid = true;
+            if(favmovie.selectedIndex === 0) {
+                favmovieErr.innerText = "You must select a favorite movie.";
+                valid = false;
+            }
+            if(desc.value.length === 0) {
+                descErr.innerText = "Write a description."
+                valid = false;
+            }
+            else if(desc.value.length < 10) {
+                descErr.innerText = "You must write at least 10 characters."
+                valid = false;
+            }
+            return valid;
+        }
+
+    </script>
+</body>
+</html>

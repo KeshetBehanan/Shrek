@@ -1,0 +1,23 @@
+﻿section {
+    margin: 100px 0 200px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+    .gallery img {
+        width: 100%;
+        z-index: 1;
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 white);
+        transition: all ease-in-out 300ms;
+    }
+
+        .gallery img:hover {
+            z-index: 40;
+            transform: scale(1.5);
+            filter: drop-shadow(0 0 5px var(--black));
+        }

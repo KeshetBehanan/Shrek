@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shrek - Log In</title>
+    <link href="/Stylesheets/main.css" rel="stylesheet" type="text/css" />
+    <link href="/Stylesheets/form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="/Home.html">
+                <img class="logo" src="/Assets/Images/Branding/logo.png" alt="Shrek" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a href="/Reviews.html">Reviews</a></li>
+                    <li><a href="/Gallery.html">Gallery</a></li>
+                    <li><a class="current" href="/Login.html">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <content>
+        <section>
+            <div class="wrapper">
+            <h1>Login</h1><br />
+            <form action="/" method="post" onsubmit="return validate();">
+                <table class="formTable">
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input id="username" type="text" name="username" required autofocus /></td>
+                        <td><p class="error" id="usernameErr"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password:</label></td>
+                        <td><input id="pass" type="password" name="pass" required /></td>
+                        <td><p class="error" id="passErr"></p></td>                        
+                    </tr>
+                </table>
+                <br />
+                <input id="rememberme" type="checkbox" name="rememberme" />
+                <label for="rememberme">Remember me.</label><br />
+                <br />
+                <input type="submit" value="Login" />
+            </form>
+            <br />
+            <a href="Register.html">Register Instead</a>
+            </div>
+        </section>
+    </content>
+
+    <footer class="divider brown flipped">
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h2>About "Shrek - The Unofficial Fan Website"</h2>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td id="credits">
+                        <p><b>This website was developed by Tal Israeli for the computer science's work at "Brenner" High School.</b></p>
+                        <br />
+                        <p>&copy; All rights reserved to the original owners of the artwork, content, logos, franchise, etc.</p>
+                        <p>This website is under the <a href="/License.html">MIT License</a>.</p>
+                        <p>Copyright &copy; 2019 Tal Israeli</p>
+                    </td>
+                    <td style="width: 20%; max-width: 200px;">
+                        <h4>Resources</h4>
+                        <br />
+                        <a href="https://www.dreamworksanimation.com/shrek/" target="_blank">
+                            <img src="/Assets/Images/Layout/dreamworks-logo.svg" alt="Dreamworks" height="30px" />
+                        </a>
+                        <br />
+                        <br />
+                        <a href="https://www.imdb.com/" target="_blank">
+                            <img src="/Assets/Images/Layout/imdb-logo.svg" alt="Alternate Text" height="30px" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script>
+        var username = document.getElementById('username');
+        var usernameErr = document.getElementById('usernameErr');
+        var pass = document.getElementById('pass');
+        var passErr = document.getElementById('passErr');
+        
+        function validateUsername() {
+            var rgx = /^(?=.{4,16}$)(?![_.])(?!.*[_.]{2})[a-z_.]+(?<![_.]+)$/;
+            if (!rgx.test(username.value)) {
+                usernameErr.innerText = "Username must contain between 4-16 lowercase characters, underscore and dot. Underscores and dots can't be at the start or at the end, and can't be near each other, or multiple times in a row.";
+                return false;
+            }
+            return true;
+        }
+
+        function validatePassword() {
+            var rgx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!#@:"\\$%&'*+-/=?^_`{|}~]).{8,}$/;
+            if (!rgx.test(pass.value)) {
+                passErr.innerText = "Password must contain minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character.";
+                return false;
+            }
+            return true;
+        }
+
+        function clearAll() {
+            usernameErr.innerText = "";
+            passErr.innerText = "";
+        }
+
+        function validate() {
+            clearAll();
+            var isValid = true;
+            if(!validateUsername()) isValid = false;
+            if(!validatePassword()) isValid = false;
+            return isValid;
+        }
+    </script>
+</body>
+</html>
